@@ -1,0 +1,533 @@
+
+/* 
+
+CSS BY YAW BOAKYE AND HAZEL LLANES
+NOV 2013
+
+COLOR CODES: -----------------------------------------
+
+* ORANGE: #ac502e (from logo)
+* LIME GREEN: #b5d473 (from logo)
+* DARK BROWN: #231e1e (content background)
+* GREY: #595554 (footer links)
+
+* BEIGE: #eee3d4 (newsletter box)
+* DARK BEIGE: #7c6f5e (newsletter subscribe button)
+
+* PALE GREEN: #becaba (donate box)
+* DARK PALE GREEN: #5f7358 (donate box button) 
+
+FONTS: ------------------------------------------------
+
+* HEADERS: "Josefin Slab" uppercase WITH letter-spacing: 1px;
+* BODY TEXT: "Palatino Linotype" WITH letter-spacing: 0.5px;
+* FOOTER & NAV: Helvetica 
+
+*/
+
+
+
+
+/* -------------------- CSS START -------------------- */
+
+body {
+    font-family: 'Palatino Linotype', Palatino, Times New Roman, serif; 
+    background: #000 url(../img/background.jpg) no-repeat top right;
+    margin:0;
+    padding: 0;
+}
+
+a, a:link, a:active { text-decoration: none; color: #ac502e; }
+a:visited {color: #6a6361; }
+a:hover { color: #b5d473; }
+
+input, textarea { border:none; outline: 0; }
+
+input[type=radio] { padding:10px;}        
+input[type=text], 
+input[type=email] {
+    font: 14px 'Palatino Linotype', Palatino, Times New Roman, serif; 
+    padding: 7px;
+    margin: 10px 0;
+}
+
+#wrapper { 
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* -------------------- HEADER -------------------- */
+
+header {
+    height: 120px;
+    margin: 115px 0 50px 0;
+}
+
+    h1#logo{
+        font:0/0 a;
+        text-shadow: none;
+        color:transparent;
+        background: url(../img/logo.png) no-repeat;
+        width:162px;
+        height:114px;
+        float: left;
+        margin: 0 80px 0 60px;
+    }
+
+#nav { 
+    padding-top:50px;
+}
+
+    #nav li {
+        display: inline;
+        list-style-type: none;
+        color: #fff;
+        font: 18px 'Helvetica', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 20px;
+        letter-spacing: 1px;
+    }
+
+    #nav li a:link,
+    #nav li a:visited { color: #eee3d4; }
+    #nav li a:hover { color: #b5d473; }
+
+/* -------------------- CONTENT AREA -------------------- */
+
+#content { 
+    background-color: #231e1e;
+    width: 870px;
+    padding: 50px 0;    
+    float: left;
+}
+
+    #content h1 { 
+        font: 36px 'Josefin Slab', Rockwell, Courier New, serif;
+        color: #fff; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .contentLeft {
+        width: 280px;
+        float: left;
+        text-align: right;
+        color: #6a6361;
+    }
+
+        .contentLeft .subnav {
+            font: 20px/28px 'Josefin Slab', Rockwell, Courier New, serif; 
+            color: #6a6361;
+            text-transform: uppercase;
+            letter-spacing: 1px; 
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        .contentLeft .subnav a { color: #6a6361; }
+        .contentLeft .subnav a:hover { color: #ac502e;}
+
+        .contentLeft .caption { 
+            font: 15px/18px 'Palatino Linotype', Palatino, Times New Roman, serif; 
+            font-style: italic;
+            margin: 18px 0 0 18px;
+        }
+
+    .contentRight { 
+        width: 530px;
+        float: right;
+        margin-right: 33px;
+    }
+
+        .contentRight span.intro { 
+            font: 18px/22px 'Palatino Linotype', Palatino, Times New Roman, serif; 
+            color: #b5d473; 
+            display: block;
+            letter-spacing: 1px;
+        }
+
+        .contentRight h2 { 
+            font: 18px 'Helvetica', Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #b5d473;
+        }
+
+        .contentRight p { 
+            font: 15px/23px 'Palatino Linotype', Palatino, Times New Roman, serif; 
+            color: #eee3d4;
+            letter-spacing: 1px;
+        }
+
+        .contentRight ul { color:#eee3d4; letter-spacing: 1px;}
+
+    .contentWide {
+        width: 100%;
+        clear: both;
+        margin: 30px 0;
+    }
+
+/* -------------------- SIDEBAR -------------------- */
+
+#sidebar {
+    width: 310px;
+    float: right;
+}
+
+.sidebox {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    color: #25211f;
+}
+
+    .sidebox h3 {
+        font: 22px 'Josefin Slab', Rockwell, Courier New, serif;
+        color: #25211f; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 0;
+        text-align: center; }
+
+    .sidebox h3:before { content:"\2014  "; }
+    .sidebox h3:after { content:" \2014"; }
+
+    #subfoot { clear: both; }
+
+    #subfoot .sidebox { width: 300px; float: left;}
+
+    #donate { background-color: #becaba; }
+    #signup { background-color: #eee3d4; }
+
+    #news { border: 5px solid #eee3d4; }
+        #news ul { margin:0; padding:0; }
+        #news li { 
+            font: 15px/19px 'Helvetica', Arial, sans-serif;
+            padding: 0;
+            list-style-type: none;
+            color: #eee3d4;
+            padding: 20px 0 20px 15px;
+            margin: 0;
+            border-bottom: 1px solid #eee3d4;
+        }
+
+        #news li:last-child {
+            border: 0;
+        }
+
+        h3#newsTitle {
+            color: #eee3d4;
+            padding: 0  0 19px 0;
+            border-bottom: 1px #eee3d4 solid;
+            letter-spacing: 2px;
+        }
+
+    /* -------------------- SIDEBAR FORM STYLES -------------------- */
+
+    .sidebox form { 
+        margin: 0 auto; 
+        width: 263px; 
+        text-align: center;
+        letter-spacing: 1px;
+        font: 14px 'Palatino Linotype', Palatino, Times New Roman, serif; 
+    }
+
+    .sidebox input[type=submit] {  
+        display: block;
+        padding: 10px;
+        text-transform: uppercase;
+        border: 0;
+        font: 11px 'Josefin Slab', Rockwell, Courier New, serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        width: 263px;
+        cursor:pointer;
+        outline: 0;
+    }  
+
+    input#newsletter_email { width: 250px; margin: 10px auto; display: block;}
+
+    input[type=text]#donate_other { width: 30px;}
+
+    #donate_submit { background-color: #5f7358; color: #fff;}
+    #newsletter_submit { background-color: #7c6f5e; color: #fff; }
+
+    #newsletter_submit:hover,  
+    #donate_submit:hover,
+    #email_submit:hover { 
+        background-color: #25211f;
+        -webkit-transition: 0.5s background-color ease-in-out;
+    }
+
+
+    .oraCam{
+        display: block;
+        text-indent: -999em;
+        width:277px;
+        height: 114px;
+        background: url('../img/oracam.png') no-repeat;
+        position: relative;
+        -webkit-animation:swing 2s infinite ease-in-out;
+        -webkit-transform-origin:top;
+        margin: 30px auto;
+    }
+
+    @-webkit-keyframes swing {
+        0% { -webkit-transform:rotate(-3deg); }
+        50% { -webkit-transform:rotate(3deg); }
+        100% { -webkit-transform:rotate(-3deg); }
+    }
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 40px;
+}
+
+#footer-links { 
+    padding: 20px 0 20px 20px;
+    margin: 0;
+}
+
+    #footer-links li {
+        display: inline;
+        list-style-type: none;
+        color: #595554;
+        font: 10px 'Helvetica', Arial, sans-serif;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+
+    #footer-links li a:link,
+    #footer-links li a:visited { color: #595554; }
+    #footer-links li a:hover { color: #8f8784; }
+
+
+/* -------------------- GALLERIES -------------------- */
+
+.showcase { position: relative; overflow: auto; margin:0; clear: both; height: 300px !important; }
+    .showcase li { list-style: none;  margin:0; padding:0;}
+        .showcase ul { margin: 0; padding: 0; display: auto;}
+        .showcase ul li { float: left;  margin:0; padding: 0;}
+
+
+    .showcase .dots {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .homeBanner .dots {
+        position: absolute;
+        left: 0;
+        top: 10px;      
+    }    
+
+        .showcase .dots li, .homeBanner .dots li {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            margin: 0 4px;
+            text-indent: -999em;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: .6;
+            
+            -webkit-transition: background .5s, opacity .5s;
+            transition: background .5s, opacity .5s;
+        }
+
+        .showcase .dots li {
+            border: 2px solid #231e1e;
+        }
+
+        .homeBanner .dots li {
+            border: 2px solid #fff;
+        }
+
+            .showcase .dots li.active {
+                background: #231e1e;
+                opacity: 1;
+            }
+
+            .homeBanner .dots li.active {
+                background: #fff;
+                opacity: 1;
+            }        
+
+
+
+/* -------------------- HOMEPAGE -------------------- */
+    .homeBanner{
+            position: relative;
+            width: 100% !important;
+            height: 509px;
+            display: block;
+            overflow: auto;
+            padding:0;
+            margin-bottom: 25px;
+        }
+
+        .homeBanner ul{
+            padding: 0;
+            margin: 0;
+        }
+
+            .homeBanner ul li{
+                list-style-type: none;
+                float:left;
+                padding: 0;
+                margin: 0;
+                min-height: 350px;
+            }
+
+
+/* -------------------- DonateBox -------------------- */
+    #donateBox{
+        margin: 0 30px;
+    }
+
+/* -------------------- BoxHover -------------------- */
+  
+    .boxWrapper {
+        width:336px;
+        height:215px;
+        display: inline-block; 
+    }
+    .boxWrapper img {
+        opacity: 0.5;
+    }
+
+    .boxWrapper p {
+        color: #becaba;
+        font: 13px/19px 'Helvetica', Arial, sans-serif;
+        letter-spacing: 1px;
+        text-align: left;
+    }    
+
+/* -------------------- BoxHover -------------------- */
+
+/* -------------------- BoxHover -------------------- */
+    .boxWrapper a:hover img {
+        opacity: 1;
+        -webkit-transition: opacity 0.9s ease-in;
+        -moz-transition: opacity 0.9s ease-in;
+        transition: opacity 0.9s ease-in;
+    }
+
+/* -------------------- BoxHover -------------------- */
+
+
+/* -------------------- Audio -------------------- */
+
+#subFooter {
+    border-bottom: 1px solid #444;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0;
+    height: 350px;
+}
+
+audio {
+    display: none;
+}
+/* -------------------- Audio -------------------- */
+
+
+
+/* -------------------- ABOUT / ORANGUTAN PAGES -------------------- */
+
+        .img{
+            width:47% ;
+            float:left;
+            -webkit-transition-duration: 0.5s;
+            margin: 0;
+
+        }
+
+        .img img{
+            width:auto; 
+            padding: 0;
+            border:.5px solid #fff;
+            margin: 0;
+        }
+
+        .img:hover{
+            width:50%;
+            -webkit-transform:scale (0.8);
+            padding:0;
+            -webkit-box-shadow: 0px 0px 30px #ccc;
+            margin: 0;
+        }
+
+        .img .mask{
+            width: 3.8%;
+            height: 27.8%;
+            position: absolute;
+            cursor: pointer;
+            -webkit-transition-duration: 0.5s;
+        }
+
+        #img-1:hover .mask{
+            margin-bottom: 0;
+            width:0%;
+        }
+
+        #img-1 {
+            width:5%;
+            -webkit-transition-duration: 1s;
+        }
+
+         #img-1:hover {
+            width: 347px;
+            -webkit-transition-property: ease;
+        }
+
+/* -------------------- FORMS -------------------- */
+
+        #contactForm { 
+            width: 100%;
+            background-color: #becaba;
+            text-align: left;
+            padding: 20px 0;
+        }
+
+        #contactForm label { 
+            display: block;
+            font: 15px/19px 'Helvetica', Arial, sans-serif;
+            color: #231e1e;
+            margin: 15px 15px 10px 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #contactForm textarea, #contactForm input, #contactForm select {
+            border: 0;
+            width:90%;
+            display: block;
+            margin: 0 auto;
+            font: 15px/19px 'Palatino Linotype', Palatino, Times New Roman, serif;
+        }
+
+        #contactForm input[type=submit] {
+            color: #fff;
+            background-color: #5f7358;
+            display: block;
+            padding: 10px;
+            text-transform: uppercase;
+            border: 0;
+            font-family: 'Josefin Slab', Rockwell, Courier New, serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            cursor: pointer;
+            margin-top: 30px;
+        }

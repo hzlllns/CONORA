@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Yaw Boakye and Hazel Llanes">
+        <title>CONORA: Conservation Orangutan</title>      
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-latest.min.js"></script>
+        <script src="js/unslider.min.js"></script>
+      
+        <script>
+        $(function() {
+            $('.showcase').unslider({
+                speed: 800,               //  The speed to animate each slide (in milliseconds)
+                delay: 3000,              //  The delay between slide animations (in milliseconds)
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: false              //  Support responsive design. May break non-responsive designs
+            });
+        });
+
+            $(function() { // SMOOTH SCROLL
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });           
+        </script>
+
+    </head>
+
+    <body>
+        <div id="wrapper"><!-- WRAPPER START -->
+
+            <header><!-- HEADER START -->
+                <h1 id="logo">Logo goes here</h1>
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-orang.html#about">About Us</a></li>
+                    <li><a href="about-orang.html">Orangutans</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                </ul>
+            </header><!-- HEADER END -->
+
+
+
+            <section id="content"><!-- CONTENT SECTION START -->
+
+                <!-- CONTENT LEFT -->
+                <div class="contentLeft">
+                    <h1>Our work</h1>
+                    <ul class="subnav">
+                        <li>&#8250; <a href="#research">Research</a></li>
+                        <li>&#8250; <a href="#showcase">Showcase</a></li>
+                    </ul>
+                    <img src="img/work_sideimg.jpg" />
+                        <p class="caption">Where the orangutan thrives, the rainforest thrives – affecting not only every creature that depends on the rainforest for its existence, but the survival of humankind itself.</p>
+                        <br /><br />
+                    <h1 id="research">Research</h1>
+                </div>
+
+                <!-- CONTENT RIGHT -->
+                <div class="contentRight">
+                     <span class="intro">Conservation Orangutan (CONORA) works to protect wild orangutans and their rainforest habitat, as well as to rehabilitate wildborn ex-captive orphan orangutans for life in the wild. </span>
+
+                    <p>CONORA’s goal is, ultimately, to save orangutan populations from extinction and to better the lives of individual orangutans. To achieve this goal, CONORA runs different programs which address these issues from different perspectives.</p>
+                   
+                    <h2><i class="fa fa-globe fa-inverse content-icons"></i> Forest Protection:</h2>
+                    <p>CONORA works in partnership with the Indonesian Ministry of Forestry to ensure the protection of Tanjung Puting National Park against illegal encroachment and extraction activities, such as logging, mining, forest conversion, and fire. </p>
+
+                    <h2><i class="fa fa-heart fa-inverse content-icons"></i> Rehabilitation:</h2>
+                    <p>CONORA runs the Orangutan Care Center and Quarantine in Pasir Panjang, Central Kalimantan. The Care Center looks after 330 rescued ex-captive orphan orangutans whose mothers have been killed.</p>
+                    <p> At the Care Center, the orphans receive medical care and regular outings to the forest. OFI’s goal is to rehabilitate these orphans to life in the wild so that they may eventually be released back into the forest at one of our release sites.</p>
+
+                    <h2><i class="fa fa-pencil fa-inverse content-icons"></i> EDUCATION:</h2>
+                    <p>CONORA believes in the value of educating local communities, the Indonesian people, and the world, about the value of forest and wildlife conservation, and specifically wild orangutan conservation. To this end, CONORA produces educational programs for schools, conducts public lectures, organizes conferences and seminars, and publishes the English newsletter.</p>
+
+                    <p>CONORA supports a research program at Camp Leakey in Tanjung Puting National Park. Since 1971, when CONORA's president Dr. Biruté Mary Galdikas first established Camp Leakey, research in this area has focused on many aspects of orangutan behavior and ecology, as well as other topics involving other species of plants and animals.</p><p> Research at Camp Leakey has been conducted by dozens of scientists and students from around the world. The wild orangutan research at Camp Leakey is one of the longest continuous studies of any wild animal population ever carried out in the history of science. </p>
+
+                    <p>Camp Leakey was established in 1971 as a base camp to study a population of wild orangutans in the northwestern part of Tanjung Puting National Park. Camp Leakey is associated with a 50 km2 (19.3 square miles) grid of narrow forest trails initially cut and mapped by Rod Brindamour. Currently over 100 kilometers of trails exist and are used by OFI staff to quickly access different spots in the study area.<p>
+
+                </div>
+                
+                <!-- WIDE CONTENT -->
+                    <div class="showcase">
+                        <ul>
+                            <li><img src="img/showcase1.jpg" /></li>
+                            <li><img src="img/showcase2.jpg" /></li>
+                            <li><img src="img/showcase3.jpg" /></li>
+                        </ul>
+                    </div>
+
+                <!-- CONTENT LEFT -->
+                <div class="contentLeft">
+                        <br />
+                    <h1 id="showcase">Showcase</h1>
+                </div>
+                <!-- CONTENT RIGHT -->
+                <div class="contentRight">
+                    <p>CONORA is involved with several other projects related to the well-being and conservation of wild and captive orangutans. CONORA rescued and owns Rusti, an orangutan on permanent load to the Honolulu Zoo. CONORA uses geographical information system (GIS) technology to help support and facilitate forest and orangutan protection in Indonesian Borneo.</p>
+                </div>
+
+            </section><!-- CONTENT SECTION END -->
+
+
+
+            <section id="sidebar"><!-- SIDEBAR SECTION START -->
+
+                <!-- DONATE BOX -->
+                <div class="sidebox" id="donate">
+                    <h3>DONATE</h3>
+                    <form id="donateForm" action="donate.php" method="post">
+                        <input id="donate_five" type="radio" name="donate" value="5">  
+                        <label for="donate_five">$5</label>  
+                        <input id="donate_ten" type="radio" name="donate" value="10">  
+                        <label for="donate_ten">$10</label>  
+                        <input id="donate_twenty" type="radio" name="donate" value="20">  
+                        <label for="donate_twenty">$20</label>  
+                        <input id="donate_other" type="radio" name="donate" value=""> 
+                        <label for="donate_other">$</label>  
+                        <input id="donate_other" type="text" name="donate" value="">  
+                        <input type="submit" id="donate_submit" class="button" value="Send my donation"> 
+                    </form>  
+                </div>
+
+                <!-- NEWSLETTER BOX -->
+                <div class="sidebox" id="signup">
+                    <h3>SIGN UP</h3>
+                    <form action="post" method="#" name="newsletter" id="newsletterForm">
+                        <input type="email" id="newsletter_email" placeholder="Email Address">
+                        <input type="submit" id="newsletter_submit" value="Subscribe to Newsletter">
+                    </form>
+                </div>
+
+                <!-- IN THE NEWS BOX -->
+                <div class="sidebox" id="news">
+                    <h3 id="newsTitle">IN THE NEWS</h3>
+                    <ul>
+                        <li>"If orangutans die out, it will be almost single-handedly due to global demand for palm oil" wwf.to/HjOdr3  HT @WWFnews</li>
+                        <li>Your support means the best possible chance for these apes. Give today.</li>
+                        <li>A Dozen Ways to Make a Difference&mdash;Celebrate "Orangutan Awareness Month" with Us! #constantcontact </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="oraCam">Orangutan cam</a>
+            </section><!-- SIDEBAR SECTION END -->
+            
+
+
+            <footer><!-- FOOTER START -->
+                <ul id="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about-orang.html#about">About Us</a></li>
+                    <li><a href="orangutans.html">Orangutans</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#"><i class="fa fa-twitter fa-inverse"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook fa-inverse"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-inverse"></i></a></li>
+                </ul>
+            </footer><!-- FOOTER END -->
+
+         </div> <!-- WRAPPER END -->
+
+    </body>
+</html>

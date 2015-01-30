@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Yaw Boakye and Hazel Llanes">
+        <title>CONORA: Conservation Orangutan</title>      
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-latest.min.js"></script>
+
+        <script>                        
+            $(function() { // SMOOTH SCROLL
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });     
+      </script>
+    </head>
+
+    <body>
+
+        <div id="wrapper"><!-- WRAPPER START -->
+
+            
+            <header><!-- HEADER START -->
+                <h1 id="logo">Logo goes here</h1>
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-orang.html#about">About Us</a></li>
+                    <li><a href="about-orang.html">Orangutans</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                </ul>
+            </header><!-- HEADER END -->
+
+
+
+            <section id="content"><!-- CONTENT SECTION START -->
+
+                <!-- CONTENT LEFT -->
+                <div class="contentLeft">
+                    <h1>Support Us</h1>
+                    <ul class="subnav">
+                        <li>&#8250; <a href="#donateLink">Donate</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTENT RIGHT -->
+                <div class="contentRight">
+                    <span class="intro">We rely on gifts from our supporters to continue our work to protect the critically endangered Sumatran orangutan. For as little as $5 a month, you can help CONORA create a brighter future for orangutans and their forest homes.</span>
+
+                    <p>CONORA supports the largest primate rescue and rehabilitation organisation in the world today operated by BOS Foundation.</p>
+
+                    <p>The Foundation has nearly 4,000 orangutans under its protection. That equates to 10% of the world's remaining population.</p>
+
+                    <p>It employs over 500 people at its projects in Central &amp; East Kalimantan, Borneo, and Malaysia.</p>
+
+                    <p>We connect people, forging partnerships across borders and cultures. We see the bigger picture - we don't run conservation projects in isolation. We seek solutions, taking a positive, constructive approach to tackling conservation problems.</p>
+                </div>
+
+                    <!-- WIDE CONTENT -->
+                    <img src="img/landscape.jpg" class="contentWide" />                
+
+                <!-- CONTENT LEFT -->
+                <div class="contentLeft">
+                    <h1 id="donateLink">Donate</h1>
+                    <p class="caption">92% of all money given to CONORA goes directly to delivering conservation results.</p>
+                </div>
+                <!-- CONTENT RIGHT -->
+                <div class="contentRight">
+                    <form action="post" method="#" name="supportDonate" id="contactForm">
+                        <label for="support_donate_first">First Name:</label>
+                        <input type="text" id="support_donate_first" placeholder="John">
+                        <label for="support_donate_last">Last Name:</label>
+                        <input type="text" id="support_donate_last" placeholder="Doe">
+                        <label for="support_donate_email">Email:</label>
+                        <input type="email" id="support_donate_email" placeholder="Email Address">
+                        <label for="donateType">Donation Type:</label>
+                        <select name="donateType">
+                            <option>One-time</option>
+                            <option>Monthly</option>
+                        </select>
+                        <label for="support_donate_amount">Amount:</label>
+                        <input type="text" id="support_donate_amount" placeholder="$50">           
+                        <label for="support_donate_signup">Opt in to newsletter?</label> 
+                        <input id="support_donate_signup" type="checkbox" name="support_donate_signup" value="5">
+                        <input type="submit" id="support_donate_submit" value="Donate Today">
+                    </form>
+                </div>
+
+            </section><!-- CONTENT SECTION END -->
+
+
+            <section id="sidebar"><!-- SIDEBAR SECTION START -->
+
+                <!-- DONATE BOX -->
+                <div class="sidebox" id="donate">
+                    <h3>DONATE</h3>
+                    <form id="donateForm" action="donate.php" method="post">
+                        <input id="donate_five" type="radio" name="donate" value="5">  
+                        <label for="donate_five">$5</label>  
+                        <input id="donate_ten" type="radio" name="donate" value="10">  
+                        <label for="donate_ten">$10</label>  
+                        <input id="donate_twenty" type="radio" name="donate" value="20">  
+                        <label for="donate_twenty">$20</label>  
+                        <input id="donate_other" type="radio" name="donate" value=""> 
+                        <label for="donate_other">$</label>  
+                        <input id="donate_other" type="text" name="donate" value="">  
+                        <input type="submit" id="donate_submit" class="button" value="Send my donation"> 
+                    </form>  
+                </div>
+
+                <!-- NEWSLETTER BOX -->
+                <div class="sidebox" id="signup">
+                    <h3>SIGN UP</h3>
+                    <form action="post" method="#" name="newsletter" id="newsletterForm">
+                        <input type="email" id="newsletter_email" placeholder="Email Address">
+                        <input type="submit" id="newsletter_submit" value="Subscribe to Newsletter">
+                    </form>
+                </div>
+
+                <!-- IN THE NEWS BOX -->
+                <div class="sidebox" id="news">
+                    <h3 id="newsTitle">IN THE NEWS</h3>
+                    <ul>
+                        <li>"If orangutans die out, it will be almost single-handedly due to global demand for palm oil" wwf.to/HjOdr3  HT @WWFnews</li>
+                        <li>Your support means the best possible chance for these apes. Give today.</li>
+                        <li>A Dozen Ways to Make a Difference&mdash;Celebrate "Orangutan Awareness Month" with Us! #constantcontact </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="oraCam">Orangutan cam</a>
+            </section><!-- SIDEBAR SECTION END -->
+            
+
+
+            <footer><!-- FOOTER START -->
+                <ul id="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about-orang.html">About Us</a></li>
+                    <li><a href="about-orang.html">Orangutans</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="support.html">Support Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </footer><!-- FOOTER END -->
+
+         </div> <!-- WRAPPER END -->
+
+    </body>
+</html>
